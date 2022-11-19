@@ -4,42 +4,73 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+			integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/stylecss.css" />
 		<title>Document</title>
 	</head>
 	<body>
 		<header>
-			<div>
-				<p>Free 2-day shipping | 30-day money back guarantee</p>
+			<div class="container">
+				<div class="marketing">
+					<p>Free 2-day shipping | 30-day money back guarantee</p>
+				</div>
+				<div class="flex-header">
+					<nav class="nav-flex">
+						<a href="#" class="logo-link"
+							><svg width="107px" height="49px">
+								<use href="./img/symbol-defs.svg#icon-logo"></use></svg
+						></a>
+
+						<ul class="nav-list">
+							<li><a href="#" class="nav-link">Products</a></li>
+							<li><a href="#" class="nav-link">How it works</a></li>
+							<li><a href="#" class="nav-link">Technology</a></li>
+							<li><a href="#" class="nav-link">eero Secure</a></li>
+							<li><a href="#" class="nav-link">Support</a></li>
+							<li><a href="#" class="nav-link">Find your system</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="button header-btn">Shop</button>
+				</div>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="">Products</a></li>
-					<li><a href="">How it works</a></li>
-					<li><a href="">Technology</a></li>
-					<li><a href="">eero Secure</a></li>
-					<li><a href="">Support</a></li>
-					<li><a href="">Find your system</a></li>
-				</ul>
-			</nav>
-			<button type="button">Shop</button>
 		</header>
 		<main>
-			<section>
-				<h1>Wi-Fi 6 is here.</h1>
-				<p>The future of home wifi is fast.</p>
-				<button type="button">SHOP WIFI SOLUTIONS</button>
+			<section class="section-hero">
+				<div class="container">
+					<h1 class="hero-title">Wi-Fi 6 is here.</h1>
+					<p class="hero-text">The future of home wifi is fast.</p>
+					<button type="button" class="hero-btn">SHOP WIFI SOLUTIONS</button>
+				</div>
 			</section>
-			<section>
-				<p>Explore eero systems on</p>
-				<button type="button">Shop now</button>
-				<h2>More wifi for the devices in your connected home.</h2>
-				<p>
-					eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds, increase your internet’s efficiency, and
-					reduce network congestion. Say goodbye to dead spots and buffering with a connection that doesn’t slow you
-					down, even as you add more devices.
-				</p>
-				<button type="button">Find your eero system</button>
-				<img src="./img/house.jpg" alt="house" width="928" />
+			<section class="amazon-section">
+				<div class="container">
+					<p class="amazon-description">Explore eero systems on</p>
+					<svg width="108px" height="33px" class="amazon-icon">
+						<use href="./img/symbol-defs.svg#icon-amazon"></use>
+					</svg>
+					<button type="button" class="amazon-btn">Shop now</button>
+					<div class="amazon-thumb">
+						<h2 class="amazon-title">More wifi for the devices in your connected home.</h2>
+
+						<p class="amazon-text">
+							eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds, increase your internet’s efficiency, and
+							reduce network congestion. Say goodbye to dead spots and buffering with a connection that doesn’t slow you
+							down, even as you add more devices.
+						</p>
+						<button type="button" class="amazon-button">Find your eero system</button>
+					</div>
+
+					<img src="./img/house.jpg" alt="house" width="928" />
+				</div>
 			</section>
 			<section>
 				<ul>
