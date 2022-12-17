@@ -5,6 +5,7 @@
   --main-textc: #404040;
   --button-background: #2468ff;
   --background-color-hero: rgba(0, 0, 0, 0.5);
+  --secondary-text-color: #646565;
 }
 
 h1,
@@ -47,6 +48,19 @@ ul {
   color: var(--light-text);
 }
 
+.primary__btn {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: #ffffff;
+  display: block;
+  background: #2468ff;
+  border: none;
+}
+
 .marketing {
   background-color: var(--background-header);
   color: var(--light-text);
@@ -80,15 +94,9 @@ ul {
 
 .header-btn {
   margin-left: auto;
-  font-size: 14px;
-  line-height: calc(25 / 14);
+  margin-right: 0;
 
-  letter-spacing: 0.10998px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
   padding: 28px 64px;
-  font-family: inherit;
 }
 
 .logo-link {
@@ -217,20 +225,13 @@ ul {
 
 .amazon-button,
 .wifi-button {
-  font-size: 14px;
-  line-height: calc(14 / 14);
-  font-family: inherit;
-  background-color: var(--button-background);
   padding-top: 17px;
   padding-bottom: 21px;
   padding-left: 37px;
   padding-right: 37px;
-  border: 1px solid transparent;
-  color: var(--light-text);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-transform: uppercase;
 }
 
 .amazon-button:hover,
@@ -369,17 +370,7 @@ ul {
 }
 
 .potention-btn {
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  color: #ffffff;
-  display: block;
-  background: #2468ff;
   padding: 17px 66px 21px 65px;
-  border: none;
 }
 
 .connectivity-section {
@@ -435,17 +426,8 @@ ul {
 }
 
 .home-btn {
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0.11px;
-  text-transform: uppercase;
   margin: 0 auto;
-  color: #ffffff;
-  display: block;
-  background: #2468ff;
   padding: 17px 43px 21px 43px;
-  border: none;
   margin-bottom: 50px;
 }
 
@@ -514,4 +496,156 @@ ul {
 
 .revers {
   margin-top: 102px;
+}
+
+.family-section {
+  padding-top: 117px;
+}
+
+.family__title {
+  margin-bottom: 123px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  color: var(--main-textc);
+}
+
+.family__wrapper {
+  display: flex;
+  gap: 80px;
+}
+
+.description {
+}
+
+.description__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 36px;
+}
+
+.description__list-btn {
+  padding-bottom: 6px;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-transform: uppercase;
+  color: #999999;
+  transition: color 300ms linear, border-color 300ms linear;
+}
+
+.description__list-btn:hover,
+.description__list-btn:focus {
+  color: var(--button-background);
+  border-color: var(--button-background);
+}
+
+.description__text {
+  width: 540px;
+  margin-bottom: 28px;
+  font-size: 36px;
+  line-height: calc(52 / 36);
+  color: var(--main-textc);
+}
+
+.description__about {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  color: var(--secondary-text-color);
+}
+
+.description__thumb {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.description__btn {
+  padding: 17px 37px 21px 37px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.expert {
+  padding-top: 117px;
+  padding-bottom: 120px;
+}
+
+.expert__title {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  text-align: center;
+  color: var(--main-textc);
+}
+
+.expert__text {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  color: var(--main-textc);
+  margin-bottom: 44px;
+}
+
+.expert__btn {
+  padding: 17px 37px 21px 37px;
+  margin-top: 30px;
+  margin-bottom: 94px;
+}
+
+.expert__list {
+  display: flex;
+  justify-content: center;
+  gap: 78px;
+}
+
+.expert__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.connected {
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-bottom: 114px;
+  background-image: url("../img/connected.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+}
+
+.connected__title {
+  margin: 0 auto;
+  margin-bottom: 83px;
+  width: 596px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: calc(60 / 50);
+  color: var(--mainbg);
+}
+
+.connected__btn {
+  padding: 17px 37px 21px 37px;
+}
+
+.footer {
+  background-color: var(--background-header);
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 92px;
+}
+
+.list__links {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
