@@ -18,16 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/stylecss.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/stylecss.css" />
-
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -374,33 +367,53 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__list">
-          <ul class="list__links">
-            <li><a href="">Products</a></li>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Technology</a></li>
-            <li><a href="">eero Secure</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Find Your System</a></li>
-            <li><a href="">Cookie preferences</a></li>
-          </ul>
-          <ul class="list__links">
-            <li><a href="">Shop</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Media room</a></li>
-            <li><a href="">Legal</a></li>
-            <li><a href="">Custom installer</a></li>
-            <li><a href="">Where to buy</a></li>
-            <li><a href="">eero for Service Providers</a></li>
-          </ul>
+        <a href="#" class="footer__logo"
+          ><svg width="86px" height="39px">
+            <use href="./img/symbol-defs.svg#icon-logo"></use></svg
+        ></a>
+        <div class="footer-wrapper">
+          <div class="footer__list">
+            <ul class="list__links">
+              <li class="list__links__items"><a href="">Products</a></li>
+              <li class="list__links__items"><a href="">How it works</a></li>
+              <li class="list__links__items"><a href="">Technology</a></li>
+              <li class="list__links__items"><a href="">eero Secure</a></li>
+              <li class="list__links__items"><a href="">Support</a></li>
+              <li class="list__links__items">
+                <a href="">Find Your System</a>
+              </li>
+              <li class="list__links__items">
+                <a href="">Cookie preferences</a>
+              </li>
+            </ul>
+            <ul class="list__links">
+              <li class="list__links__items"><a href="">Shop</a></li>
+              <li class="list__links__items"><a href="">Careers</a></li>
+              <li class="list__links__items"><a href="">Blog</a></li>
+              <li class="list__links__items"><a href="">Media room</a></li>
+              <li class="list__links__items"><a href="">Legal</a></li>
+              <li class="list__links__items">
+                <a href="">Custom installer</a>
+              </li>
+              <li class="list__links__items"><a href="">Where to buy</a></li>
+              <li class="list__links__items">
+                <a href="">eero for Service Providers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="connect__box">
+            <h2 class="connect__title">Connect with us</h2>
+            <p class="connect__text">
+              For the latest eero news and promotions.
+            </p>
+            <form class="footer__form">
+              <label
+                ><input class="footer__input" type="text" placeholder="Email"
+              /></label>
+              <button class="footer__btn" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
-        <h2>Connect with us</h2>
-        <p>For the latest eero news and promotions.</p>
-        <form>
-          <label><input type="text" placeholder="Email" /></label>
-          <button type="submit">Submit</button>
-        </form>
         <p>&copy; 2021 EERO LLC, SAN FRANCISCO, CA</p>
       </div>
     </footer>
